@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PVR WEB</title>
+
+    <!-- Google Font: Inter (Gen Z Design System) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Light theme -->
+    <link rel="stylesheet" id="pvr-theme-light" href="./haptikbot-dark.css">
+    <style>
+        /* Basic reset and font */
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--pvr-bg, #F7F7F7);
+            color: var(--pvr-text-primary, #0A0A0A);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .pvr-light-mode {
+            background-color: var(--pvr-bg, #F7F7F7);
+            color: var(--pvr-text-primary, #0A0A0A);
+        }
+    </style>
+</head>
+
+<body>
+
+    PVR WEB APP
+
+    <script>
+        /* ── Light theme only ────────────────────────────────── */
+        const lightSheet = document.getElementById('pvr-theme-light');
+        const css       = './haptikbot-dark.css';
+
+        function applyLightMode() {
+            lightSheet.disabled = false;
+            document.body.classList.add('pvr-light-mode');
+        }
+
+        applyLightMode();
+        /* ── Haptik SDK Init ─────────────────────────────────── */
+        var haptikInitSettings = {
+            'business-id': '7203',
+            'client-id': 'cd4c4077ae7748763331badd8b3dd6da6a5211c3',
+            'base-url': 'https://staging.hellohaptik.com/',
+            'ignore-storage': false,
+            'typography': 'Poppins',
+            'primary-color': '#FFBD51',
+
+            // Main CSS file for Haptik widget
+            'custom-css': css,
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const user_id   = urlParams.get('user_id');
+
+        document.addEventListener('haptik_sdk', () => {
+
+            HaptikSDK.signup(
+                {
+                    'username':    'username123',
+                    'auth_id':     '123sfsdffsdfsd',
+                    'auth_code':   '8kBYLkqI7xOQPnsdfdsvfcG4Y5Q==',
+                    'mobile_no':   '8300754432',
+                    'email':       'santhosh@gmail.com',
+                    'signup-type': 'third_party',
+
+                    'custom_data': {
+                        "source":        "inox",
+                        "current_city":  "Gurugram",
+                        "current_lat":   "12.9629",
+                        "current_long":  "77.5775",
+                        "mobile_no":     "9806355598",
+                        "location_time": "2025-04-29T07:25:12.226359+0000",
+                        "environment":   "preprod",
+                        "platform":      "web"
+                    }
+                },
+
+                function (status, error, data) {
+                    if (status) {
+                        console.log('CUSTOM SIGN UP SUCCESSFUL');
+                        HaptikSDK.launchMessage("Main Menu", callbackFunction, true);
+                    } else {
+                        console.log('ERROR', error);
+                    }
+                }
+            );
+        });
+
+        function callbackFunction() {
+            console.log("Call Back Function Called");
+        }
+    </script>
+
+    <script
+        type="text/javascript"
+        charset="UTF-8"
+        src="https://toolassets.haptikapi.com/platform/javascript-xdk/production/loader.js">
+        const style = document.createElement('style');
+        style.textContent = `
+            .hsl.carousel::before,
+            .hsl.carousel::after {
+                content: none !important;
+                display: none !important;
+         }   `;
+document.head.appendChild(style);
+    </script>
+
+</body>
+</html>
