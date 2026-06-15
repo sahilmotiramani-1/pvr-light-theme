@@ -183,7 +183,7 @@ body,
   padding: 6px 12px !important;
   background-color: #FFFFFF !important;
   border: 1px solid #FBA825 !important;
-  border-radius: 20px !important;
+  /* border-radius: 20px !important; */
   -webkit-tap-highlight-color: #FBA825 !important;
   transition: background-color 0.2s ease, transform 0.1s ease !important;
 }
@@ -266,8 +266,8 @@ body,
 }
 /* ── CAROUSEL ─────────────────────────────────────────────── */
 .hsl-carousel-element {
-    min-width: 180px !important;   /* was 130px */
-    width: 180px !important;
+    min-width: 130px !important;   /* was 130px */
+    width: 130px !important;
     background-color: #FFFFFF !important;
     border: 1px solid #EBEBEB !important;
     border-radius: 12px !important;
@@ -385,11 +385,11 @@ body,
   color: #0A0A0A !important;
   font-weight: 600 !important;
 }
-
+/* 
 .hsl-carousel-element .hsl-actionable {
     margin-left: 15% !important;
     width: 70% !important;
-}
+} */
 
 .hsl-carousel-element.hsl-carousel-elements-item  .hsl-actionable.disabled,
  .hsl-actionable.disabled .hsl-actionable-text.v2 {
@@ -413,7 +413,7 @@ body,
 .hsl-carousel-element .hsl-actionable:focus {
   background-color: #FBA825 !important;
   color: #0A0A0A !important;
-  border-radius: 20px !important;
+  /* border-radius: 20px !important; */
   transform: none !important;
   box-shadow: none !important;
 }
