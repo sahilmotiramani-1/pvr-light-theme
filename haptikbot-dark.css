@@ -50,7 +50,7 @@ iframe#haptik-xdk-main-view.xdk-iframe {
 .header-v2,
 [class*="header-v2"] {
   background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 100%) !important;
-  border-bottom: 1px solid #EBEBEB !important;
+  border-bottom: 1px solid #FFFFFF !important;
   height: auto !important;
   min-height: 56px !important;
   overflow: visible !important;
@@ -738,19 +738,19 @@ div.hsl-form-element {
 .composerv2,
 [class*="composerv2"]:not([class*="text"]):not([class*="area"]) {
   background-color: #F7F7F7 !important;
-  border-radius: 10px !important;
+  border-radius: 52px !important;
 }
 
 .composerv2-wrapper-voice.v2 {
   background-color: #F7F7F7 !important;
-  border-radius: 10px !important;
+  border-radius: 52px !important;
 }
 
 .composerv2.v2,
 .composerv2.v2:hover,
 .composerv2.v2:focus,
 .composerv2.v2:focus-within {
-  border-radius: 10px !important;
+  border-radius: 52px !important;
 }
 
 .composerv2.v2 {
