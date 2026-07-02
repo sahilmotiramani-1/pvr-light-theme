@@ -168,7 +168,7 @@ iframe#haptik-xdk-main-view.xdk-iframe {
   color: #0A0A0A !important;
   border: 1px solid #EBEBEB !important;
   border-radius: 10px !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+  box-shadow: none !important;
 }
 
 /* ── USER MESSAGE BUBBLE ──────────────────────────────────── */
@@ -291,6 +291,7 @@ iframe#haptik-xdk-main-view.xdk-iframe {
   border: 1px solid #D0D0D0 !important;
   border-radius: 10px !important;
   background-color: #ffffff !important;
+  box-shadow:none !important;
 }
 
 .quick-reply-option:hover {
@@ -345,11 +346,8 @@ iframe#haptik-xdk-main-view.xdk-iframe {
 
 .hsl-actionables.message-section-message-button-actionables {
   color: #FBA825;
-  margin-left: 8px !important;
-  margin-right: 8px !important;
-  margin-bottom: 3px !important;
+  margin: 8px 12px 12px 12px !important;
 }
-
 .hsl-actionables {
   font-size: 12px !important;
   font-family: 'Inter', sans-serif !important;
@@ -909,14 +907,14 @@ rect#Rectangle {
 
 /* ── MESSAGE BUTTONS ──────────────────────────────────────── */
 .hsl-button.message-section-message-button {
-  background-color: #F7F7F7 !important;
+  background-color: #ffffff !important;
   color: #0A0A0A !important;
   border: 1px solid #EBEBEB !important;
   border-radius: 10px !important;
 }
 
 .hsl-button.message-section-message-button:hover {
-  background-color: #F4F4F4 !important;
+  background-color: #ffffff !important;
 }
 
 .hsl-button.message-section-message-button *,
