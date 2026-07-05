@@ -1012,3 +1012,10 @@ span.taskbox-new-compressTasks-iconWrapper {
 .task-new-title{
   font-weight:500 !important;
 }
+.message-section-messages {
+    margin-top: auto !important;
+    padding: 0 8px 32px !important;
+    transform: translateY(0) !important;
+    transition: 0.4s ease-out !important;
+    margin-bottom: auto !important;
+}
