@@ -674,7 +674,7 @@ div.hsl-form-element {
   font-family: 'Inter', sans-serif !important;
   background-color: #FBA825 !important;
   color: #0A0A0A !important;
-  border: 1.5px solid rgba(251, 168, 37, 0.3) !important;
+  /* border: 1.5px solid rgba(251, 168, 37, 0.3) !important; */
   border-radius: 10px !important;
   box-shadow: 0 4px 12px rgba(251, 168, 37, 0.25) !important;
   transition: background-color 0.2s ease !important;
@@ -686,7 +686,7 @@ div.hsl-form-element {
 
 .hsl.form .hsl-form-button.submitted {
   background-color: rgba(251, 168, 37, 0.4) !important;
-  border-color: rgba(251, 168, 37, 0.4) !important;
+  /* border-color: rgba(251, 168, 37, 0.4) !important; */
   color: #7E7E7E !important;
   box-shadow: none !important;
   cursor: not-allowed !important;
