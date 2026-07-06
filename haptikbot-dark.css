@@ -18,25 +18,23 @@ body,
   font-family: 'Inter', sans-serif !important;
 }
 
-/* ── WIDGET SHELL — CINEMATIC BORDER (from dark theme) ──────── */
+/* ── WIDGET SHELL (inner) ─────────────────────────────────── */
 .extended-view.active {
   background: #F7F7F7 !important;
-  border: 1px solid rgba(251, 168, 37, 0.5) !important;
     border-radius: 20px !important;
     overflow: hidden !important;
     backdrop-filter: blur(12px) !important;
     -webkit-backdrop-filter: blur(12px) !important;
-    box-shadow:
-        0 0 0 1px rgba(251, 168, 37, 0.15),
-        0 0 16px rgba(251, 168, 37, 0.20),
-        0 0 32px rgba(251, 168, 37, 0.14),
-        0 0 64px rgba(251, 168, 37, 0.08) !important;
 }
 
 .xdk-view-wrapper,
 iframe#haptik-xdk-main-view.xdk-iframe {
   border-radius: 20px !important;
-  overflow: visible !important;
+  overflow: hidden !important;
+  box-shadow:
+      0 0 30px rgba(251, 168, 37, 0.20),
+      0 0 70px rgba(251, 168, 37, 0.14),
+      0 0 130px rgba(251, 168, 37, 0.08) !important;
 }
 
 /* ── WIDGET SHELL ─────────────────────────────────────────── */
@@ -505,7 +503,7 @@ iframe#haptik-xdk-main-view.xdk-iframe {
 /* ── FORM CARD (enhanced borders from dark theme) ─────────── */
 .hsl.form {
   background: #FFFFFF !important;
-  border: 1.8px solid #EBEBEB  !important;
+  /* border: 1.8px solid #EBEBEB  !important; */
   border-radius: 10px !important;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
 }
@@ -1018,4 +1016,11 @@ span.taskbox-new-compressTasks-iconWrapper {
     transform: translateY(0) !important;
     transition: 0.4s ease-out !important;
     margin-bottom: auto !important;
+}
+.extended-view{
+      width: calc(100vw - 0px) !important;
+      margin: 0 !important;
+      margin-left: 0px !important;
+      margin-bottom: 0px !important;
+      height: calc(100vh - 0px) !important;
 }
