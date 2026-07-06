@@ -1024,3 +1024,7 @@ span.taskbox-new-compressTasks-iconWrapper {
       margin-bottom: 0px !important;
       height: calc(100vh - 0px) !important;
 }
+iframe#haptik-xdk-main-view {
+    width: 397px !important;
+    height: 535.28px !important;
+}
