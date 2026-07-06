@@ -675,6 +675,7 @@ div.hsl-form-element {
   background-color: #FBA825 !important;
   color: #0A0A0A !important;
   /* border: 1.5px solid rgba(251, 168, 37, 0.3) !important; */
+  border: none !important;
   border-radius: 10px !important;
   box-shadow: 0 4px 12px rgba(251, 168, 37, 0.25) !important;
   transition: background-color 0.2s ease !important;
