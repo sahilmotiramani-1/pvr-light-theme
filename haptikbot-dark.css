@@ -509,7 +509,8 @@ iframe#haptik-xdk-main-view.xdk-iframe {
   background: #FFFFFF !important;
   /* border: 1.8px solid #EBEBEB  !important; */
   border-radius: 10px !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+  border:none !important;
+  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important; */
 }
 
 .hsl.form + .message-timestamp.left {
