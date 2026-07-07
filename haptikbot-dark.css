@@ -565,7 +565,7 @@ iframe#haptik-xdk-main-view.xdk-iframe {
   top: 50%;
   transform: translateY(-50%);
   color: #FBA825;
-  font-size: 18px !important;
+  font-size: 30px !important;
   font-weight: 500 !important;
   pointer-events: none;
 }
